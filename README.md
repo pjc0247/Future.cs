@@ -1,5 +1,5 @@
 # Future.cs
-very simple future implementation for C# 3.5 or below, without promise
+very simple future implementation for .Net 3.5 or below, without promise
 
 Source
 ----
