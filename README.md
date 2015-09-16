@@ -40,3 +40,17 @@ public sealed class Future<T>
     }
 };
 ```
+
+Make Async-Sync using Future.cs
+----
+```c#
+var ft = new Future<String>();
+
+var thread = new Thread(() => {
+	ft.Produce(
+		SomeHttpCall("www.naver.com"));
+});
+thread.Start();
+
+var response = ft.Acquire();
+```
