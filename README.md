@@ -43,7 +43,7 @@ public sealed class Future<T>
 
 Make Async-Sync using Future.cs
 ----
-Introduce a trick for some platforms DAT prohibits network operations on main-thread. note DAT it's just for a convience.
+Introduce a trick for some platforms DAT prohibits network operations on main-thread.<br>note DAT it's just for a convience.
 ```c#
 var ft = new Future<String>();
 
