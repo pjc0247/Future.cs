@@ -25,6 +25,7 @@ public sealed class Future<T>
     }
     public T Acquire()
     {
+    	/* performs double-checking to prevent unnecessary lock() */
         if(hasValue == false)
         {
             lock (m)
